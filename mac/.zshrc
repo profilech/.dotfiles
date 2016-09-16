@@ -10,7 +10,8 @@ export ZSH=/Users/enpit-student/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 #ZSH_THEME="ys"
-ZSH_THEME="candy"
+#ZSH_THEME="candy"
+ZSH_THEME="bira"
 #POWERLEVEL9K_MODEL='compatible'
 
 # Uncomment the following line to use case-sensitive completion.
