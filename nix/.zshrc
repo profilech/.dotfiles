@@ -90,9 +90,9 @@ source $ZSH/oh-my-zsh.sh
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
+export RBENV_ROOT=$HOME/.rbenv
+export PATH=$RBENV_ROOT/bin:$PATH
 eval "$(rbenv init -)"
 
