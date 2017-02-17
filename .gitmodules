@@ -1,3 +1,6 @@
 [submodule ".emacs.d"]
 	path = nix/.emacs.d
 	url = https://github.com/profilech/.emacs.d.git
+[submodule "mac/.emacs.d"]
+	path = mac/.emacs.d
+	url = https://github.com/profilech/.emacs.d.git
