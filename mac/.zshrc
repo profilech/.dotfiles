@@ -56,7 +56,10 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(autojump git)
+plugins+=(zsh-nvm)
+plugins+=(tmux tmuxinator)
+plugins+=(docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,3 +92,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+
+## pyenv
+#export PYENV_ROOT=$HOME/.pyenv
+#export PATH=$PYENV_ROOT/bin:$PATH
+#eval "$(pyenv init -)"
+#
+## rbenv
+#export RBENV_ROOT=$HOME/.rbenv
+#export PATH=$RBENV_ROOT/bin:$PATH
+#eval "$(rbenv init -)"
+
+# goenv
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$PATH
+
+# java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
