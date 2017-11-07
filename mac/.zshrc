@@ -93,11 +93,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
-## pyenv
-#export PYENV_ROOT=$HOME/.pyenv
-#export PATH=$PYENV_ROOT/bin:$PATH
-#eval "$(pyenv init -)"
-#
+# pyenv
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
+
 ## rbenv
 #export RBENV_ROOT=$HOME/.rbenv
 #export PATH=$RBENV_ROOT/bin:$PATH
