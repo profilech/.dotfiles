@@ -91,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
