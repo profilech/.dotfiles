@@ -2,6 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
+# https://github.com/Microsoft/WSL/issues/1887
+unsetopt BG_NICE
+
 # Path to your oh-my-zsh installation.
 #  export ZSH=/home/user01/.oh-my-zsh
   export ZSH=~/.oh-my-zsh
@@ -54,7 +57,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump)
 
 source $ZSH/oh-my-zsh.sh
 
