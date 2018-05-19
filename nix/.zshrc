@@ -89,6 +89,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+xe () {
+  emacs "$@" &
+}
+alias e="emacs -nw"
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv

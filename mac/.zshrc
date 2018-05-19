@@ -92,6 +92,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+xe () {
+  emacs "$@" &
+}
+alias e="emacs -nw"
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
@@ -100,10 +104,10 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 alias pyrun="pipenv run python"
 
-## rbenv
-#export RBENV_ROOT=$HOME/.rbenv
-#export PATH=$RBENV_ROOT/bin:$PATH
-#eval "$(rbenv init -)"
+# rbenv
+export RBENV_ROOT=$HOME/.rbenv
+export PATH=$RBENV_ROOT/bin:$PATH
+eval "$(rbenv init -)"
 
 # goenv
 export GOENV_ROOT=$HOME/.goenv
