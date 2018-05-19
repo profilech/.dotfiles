@@ -456,6 +456,7 @@ before packages are loaded."
     (enlarge-window-horizontally (- 80 (window-width)))
     )
   (spacemacs/set-leader-keys "'" (lambda () (interactive) (db/shell-pop-right-side)))
+  (setq vc-follow-symlinks nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
