@@ -94,11 +94,16 @@ source $ZSH/oh-my-zsh.sh
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+alias pyrun="pipenv run python"
 
 # rbenv
 export RBENV_ROOT=$HOME/.rbenv
 export PATH=$RBENV_ROOT/bin:$PATH
 eval "$(rbenv init -)"
 
+# spark
+export SPARK_ROOT=/usr/local/share/spark/spark-2.2.0-bin-hadoop2.7
+export PATH=$SPARK_ROOT/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
