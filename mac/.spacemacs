@@ -68,7 +68,10 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages
+   '(
+     editorconfig
+     )
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -456,7 +459,12 @@ before packages are loaded."
     (enlarge-window-horizontally (- 80 (window-width)))
     )
   (spacemacs/set-leader-keys "'" (lambda () (interactive) (db/shell-pop-right-side)))
+
+  ;; Disable vc-follow-symlinks
   (setq vc-follow-symlinks nil)
+
+  ;; editorconfig-mode enabled
+  (editorconfig-mode 1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
