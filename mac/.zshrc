@@ -113,7 +113,7 @@ eval "$(rbenv init -)"
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-export GOPATH=~/go
+export GOPATH=~/xvar/xgo
 export PATH=$GOPATH/bin:$PATH
 
 # java
