@@ -93,6 +93,8 @@ xe () {
   emacs "$@" &
 }
 alias e="emacs -nw"
+#alias g='cd $(ghq root)/$(ghq list | peco)'
+#alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
@@ -105,6 +107,13 @@ alias pyrun="pipenv run python"
 export RBENV_ROOT=$HOME/.rbenv
 export PATH=$RBENV_ROOT/bin:$PATH
 eval "$(rbenv init -)"
+
+# goenv
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+export GOPATH=~/xvar/xgo
+export PATH=$GOPATH/bin:$PATH
 
 # spark
 export SPARK_ROOT=/usr/local/share/spark/spark-2.2.0-bin-hadoop2.7
