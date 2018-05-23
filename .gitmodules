@@ -4,3 +4,9 @@
 [submodule "nix/.emacs.d"]
 	path = nix/.emacs.d
 	url = https://github.com/profilech/.emacs.d.git
+[submodule "nix/.spacemacs.d/layers"]
+	path = nix/.spacemacs.d/layers
+	url = https://github.com/profilech/spacemacs-private-layers.git
+[submodule "mac/.spacemacs.d/layers"]
+	path = mac/.spacemacs.d/layers
+	url = https://github.com/profilech/spacemacs-private-layers.git
