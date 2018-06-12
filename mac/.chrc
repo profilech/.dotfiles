@@ -32,3 +32,10 @@ export PATH=$GOPATH/bin:$PATH
 
 # java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# ghq
+alias ghqget="ghq get"
+alias ghqlist="ghq list"
+alias ghqroot="ghq root"
+alias ghqsync="ghq-sync.sh"
+
