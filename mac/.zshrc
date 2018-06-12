@@ -91,30 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-xe () {
-  emacs "$@" &
-}
-alias e="emacs -nw"
 
-# pyenv
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-alias pyrun="pipenv run python"
-
-# rbenv
-export RBENV_ROOT=$HOME/.rbenv
-export PATH=$RBENV_ROOT/bin:$PATH
-eval "$(rbenv init -)"
-
-# goenv
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-eval "$(goenv init -)"
-export GOPATH=~/xvar/xgo
-export PATH=$GOPATH/bin:$PATH
-
-# java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# My config
+[ -f ~/.chrc ] && source ~/.chrc
