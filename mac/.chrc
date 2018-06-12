@@ -10,6 +10,8 @@ xe () {
   emacs "$@" &
 }
 alias e="emacs -nw"
+#alias g='cd $(ghq root)/$(ghq list | peco)'
+#alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
@@ -30,8 +32,8 @@ eval "$(goenv init -)"
 export GOPATH=~/xvar/xgo
 export PATH=$GOPATH/bin:$PATH
 
-# java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # ghq
 alias ghqget="ghq get"
@@ -39,3 +41,5 @@ alias ghqlist="ghq list"
 alias ghqroot="ghq root"
 alias ghqsync="ghq-sync.sh"
 
+# java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
