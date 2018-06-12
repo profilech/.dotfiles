@@ -1,5 +1,10 @@
 # chrc file
 
+# PATH
+export PATH=$HOME/.chlocal/bin:$PATH
+chmod +x $HOME/.chlocal/bin/*.sh
+
+# emacs
 xe () {
   emacs "$@" &
 }
@@ -27,7 +32,14 @@ export GOPATH=~/xvar/xgo
 export PATH=$GOPATH/bin:$PATH
 
 # spark
-export SPARK_ROOT=/usr/local/share/spark/spark-2.2.0-bin-hadoop2.7
-export PATH=$SPARK_ROOT/bin:$PATH
+#export SPARK_ROOT=/usr/local/share/spark/spark-2.2.0-bin-hadoop2.7
+#export PATH=$SPARK_ROOT/bin:$PATH
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ghq
+alias ghqget="ghq get"
+alias ghqlist="ghq list"
+alias ghqroot="ghq root"
+alias ghqsync="ghq-sync.sh"
