@@ -5,7 +5,6 @@ export PATH=$HOME/.chlocal/bin:$PATH
 chmod +x $HOME/.chlocal/bin/*.sh
 
 # emacs
-# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 xe () {
   emacs "$@" &
 }
@@ -43,3 +42,8 @@ alias ghqsync="ghq-sync.sh"
 
 # java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# hh
+export HISTFILE=~/.zsh_history  # ensure history file visibility
+export HH_CONFIG=hicolor        # get more colors
+bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)

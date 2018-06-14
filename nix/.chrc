@@ -31,10 +31,6 @@ eval "$(goenv init -)"
 export GOPATH=~/xvar/xgo
 export PATH=$GOPATH/bin:$PATH
 
-# spark
-#export SPARK_ROOT=/usr/local/share/spark/spark-2.2.0-bin-hadoop2.7
-#export PATH=$SPARK_ROOT/bin:$PATH
-
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -43,3 +39,11 @@ alias ghqget="ghq get"
 alias ghqlist="ghq list"
 alias ghqroot="ghq root"
 alias ghqsync="ghq-sync.sh"
+
+# java
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# hh
+export HISTFILE=~/.zsh_history  # ensure history file visibility
+export HH_CONFIG=hicolor        # get more colors
+bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
