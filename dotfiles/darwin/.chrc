@@ -35,9 +35,13 @@ export PATH=$GOPATH/bin:$PATH
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # ghq
+alias ghqg="ghq get"
 alias ghqget="ghq get"
+alias ghql="ghq list"
 alias ghqlist="ghq list"
+alias ghqr="ghq root"
 alias ghqroot="ghq root"
+alias ghqs="ghq-sync.sh"
 alias ghqsync="ghq-sync.sh"
 
 # java
