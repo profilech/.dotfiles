@@ -1,4 +1,5 @@
 # chrc file
+export SHELL=$(which zsh)
 
 # PATH
 export PATH=$HOME/.chlocal/bin:$PATH
