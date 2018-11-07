@@ -52,3 +52,7 @@ alias ghqsync="ghq-sync.sh"
 export HISTFILE=~/.zsh_history  # ensure history file visibility
 export HH_CONFIG=hicolor        # get more colors
 bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
+
+# docker
+[ ! -f ~/.local/bin/docker ] && ln -s "$(which docker.exe)" ~/.local/bin/docker
+[ ! -f ~/.local/bin/docker-compose ] && ln -s "$(which docker-compose.exe)" ~/.local/bin/docker-compose
